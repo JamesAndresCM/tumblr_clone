@@ -1,25 +1,22 @@
-# README
+## Tumblr Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Descripción 
+- Pequeño clone de tumblr. Creado principalmente para el uso de helper en vez de variables de instancia en el controller.
 
-Things you may want to cover:
+### Características
+- Sistema de post con tags y comentarios
 
-* Ruby version
+### Instalación
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails server
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# tumblr_clone
+### Imágenes
+<img src="https://i.imgur.com/YOwK0c3.png" />
+<br>
+<img src="https://i.imgur.com/IWvMHCB.png" />
+<br>
