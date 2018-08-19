@@ -1,0 +1,12 @@
+<div class="comment clearfix">
+    <div class="comment_content">
+      <p class="comment_body"><%= comment.email %></p>
+      <p class="comment_body"><%= comment.body %></p>
+      <p class="comment_title"><%= time_ago_in_words(comment.created_at) %> Ago</p>
+      <% if user_signed_in? and (current_user.id.eql? (post.user_id) or current_user.id.eql? (comment.user_id)) %>
+      <p><%= link_to 'Destroy Comment', [comment.post, comment],
+               method: :delete, class: 'button', style: 'float: left;background-color: red;color: white;',
+               data: { confirm: 'Are you sure?' } %></p>
+      <% end %>
+    </div>
+</div>
